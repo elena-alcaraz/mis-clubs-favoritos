@@ -1,0 +1,20 @@
+[ 
+    {
+        "name": "Book Club",
+        "openOnWeekdays": true,
+        "openOnWeekend": true
+    }, 
+    
+    {
+        "name": "Chess club",
+        "openOnWeekdays": false,
+        "openOnWeekend": true
+    }, {
+        "name": "Escape room club",
+        "openOnWeekdays": false,
+        "openOnWeekend": false
+    }, {
+        "name": "Debate club",
+        "openOnWeekdays": true,
+        "openOnWeekend": false
+    } ]
