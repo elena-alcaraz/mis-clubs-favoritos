@@ -27,15 +27,29 @@ const handleWeekChange = (ev) => {
 
   return (
 
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} >
         <label htmlFor="name">Nombre del Club</label>
-        <input type="text" name="name" id="name" onChange={handleInput}/>
+        <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            onChange={handleInput}/>
         <br/>
         <label htmlFor="openOnWeekdays">Abierto entre semana: </label>
-        <input type="checkbox" name="openOnWeekdays" id="openOnWeekdays" checked={openOnWeekdays} onChange={handleWeekChange}/>
+        <input 
+            type="checkbox" 
+            name="openOnWeekdays" 
+            id="openOnWeekdays" 
+            checked={openOnWeekdays} 
+            onChange={handleWeekChange}/>
         <br/>
         <label htmlFor="openOnWeekend">Abierto el fin de semana: </label>
-        <input type="checkbox" name="openOnWeekend" id="openOnWeekend" checked={openOnWeekend} onChange={handleWeekendChange}/>
+        <input 
+            type="checkbox" 
+            name="openOnWeekend" 
+            id="openOnWeekend" 
+            checked={openOnWeekend} 
+            onChange={handleWeekendChange}/>
         <br/>
         <input type="submit" value="Agregar un nuevo club" />
     </form>
