@@ -21,7 +21,6 @@ const handleWeekChange = (ev) => {
   };
 
   const handleSubmit = (ev) => {
-    console.log(name, openOnWeekdays, openOnWeekend);
     ev.preventDefault();
     addNewClubArray();
   };

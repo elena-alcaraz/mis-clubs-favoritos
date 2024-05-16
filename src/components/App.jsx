@@ -12,7 +12,6 @@ function App() {
 
   //añadimos los datos de un nuevo club
   const addNewClub = (key, value) => {
-    console.log(key, value);
     const newObject = { ...newClub, [key]: value };
     setNewClub(newObject);
   }
@@ -21,6 +20,7 @@ function App() {
   const addNewClubArray = () => {
     setClubList([...clubList, newClub])
   }
+  
 
   return (
     <>
