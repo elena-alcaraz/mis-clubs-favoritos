@@ -4,7 +4,7 @@ function Clubs({ clubList }) {
   return (
     <ul>
        {clubList.map((club, index) => 
-        <li key={index} className="li"> 
+        <li key={index}> 
             <Card club={club} numberOfClub={index} /> 
         </li> )} 
     </ul>

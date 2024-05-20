@@ -26,21 +26,26 @@ function App() {
   }
 
   //Función para filtrar (in progess)
-/* const filteredClubs = clubsList.filter((club) => {
-    if (filter === "weekend") {
-      return club.openOnWeekend === true
-    } else if (filter === "weekdays") {
-      return club.openOnWeekdays === true
-    } 
-    return true
-  }); */
+  const filteredClubs = () => {
+    return clubList.filter((club) => {
+      if (filter === "weekend") {
+        //return club.openOnWeekend
+        return club.openOnWeekend === true
+      } else if (filter === "weekdays") {
+        return club.openOnWeekdays === true
+      }
+      //return club
+      return true
+    })
+  }
+
   
   return (
     <>
       <h1>Mis Clubs</h1>
       <Filter setFilter={setFilter}/>
       <br/>
-      <Clubs clubList={clubList} />
+      <Clubs clubList={filteredClubs()} />
       <br/>
       <FormNewClub addNewClub={addNewClub} addNewClubArray={addNewClubArray}/>
 

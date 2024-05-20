@@ -1,14 +1,14 @@
 
 function Filter({ setFilter }) {
 
-   const handleChange = (event) => {
+  /*  const handleChange = (event) => {
     setFilter(event.target.value)
-   }
+   } */
 
   return (
     <div>
-        <label htmlFor=""></label>
-        <select onChange={handleChange}>
+        <label htmlFor="">Mostrar</label>
+        <select onChange={(ev) => setFilter(ev.target.value)}>
             <option value="all">Todos</option>
             <option value="weekend">Abren los fines de semana</option>
             <option value="weekdays">Abren entre semana</option>
